@@ -1,5 +1,6 @@
 'use strict';
-
+console.log('here we go');
+console.log(process.env);
 var restify = require('restify'),
     server = restify.createServer({name: 'node-test-app'});
 
