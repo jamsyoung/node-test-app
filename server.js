@@ -7,7 +7,11 @@ server.get('/hello/:name', function (req, res, next) {
     res.send({hello: req.params.name});
 });
 
-server.listen(80, function () {
+server.get('/', function (req, res, next) {
+    res.send({welcome: 'oblivion'});
+});
+
+server.listen(8080, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
 
