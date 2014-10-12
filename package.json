@@ -2,6 +2,16 @@
   "name": "node-test-app",
   "version": "1.0.0",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "0.10.32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamsyoung/node-test-app"
+  },
   "dependencies": {
     "restify": "2.8.3"
   }
