@@ -7,7 +7,7 @@ server.get('/hello/:name', function (req, res, next) {
     res.send({hello: req.params.name});
 });
 
-server.listen(8080, function () {
+server.listen(80, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
 
