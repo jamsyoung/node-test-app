@@ -1,6 +1,5 @@
 'use strict';
-console.log('here we go');
-console.log(process.env);
+
 var restify = require('restify'),
     server = restify.createServer({name: 'node-test-app'});
 
@@ -15,4 +14,3 @@ server.get('/', function (req, res, next) {
 server.listen(process.env.PORT || '8080', function () {
     console.log('%s listening at %s', server.name, server.url);
 });
-
